@@ -27,8 +27,15 @@ recursionlimit 6 er niche set kora zay na.
 # direct recursion: zokhon ekti function defination e function call hoy and stoping
 # condition onuzayee seta return hoy tokhon sei recursion ke direct recursion bole.
 
+
 def naturalNum(n):
-    print(n)
+    print(n) #11-1
     if n==1:
+        # naturalNum(n - 1) #11
         return
-    naturalNum(n-1)
+    naturalNum(n - 1)
+    # print(n) #2-11
+
+
+lastNum=int(input('Enter the last number: '))
+naturalNum(lastNum)
