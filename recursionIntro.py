@@ -101,4 +101,14 @@ def factorial(n):
 
 factInput=int(input('Enter your number: '))
 factorialValue=factorial(factInput)
-print(factorialValue)
+# print(factorialValue)
+
+#print your name given times by recursion
+count=1
+def namePrinter(name):
+    global count
+    if count<=10:
+        print(f"{name,count}")
+        count+=1
+        namePrinter(name)
+namePrinter('MSA')
