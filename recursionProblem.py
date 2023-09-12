@@ -66,8 +66,20 @@ def fibonacci(n):
         return 1
     return (fibonacci(n-2)+fibonacci(n-1))
 
-fiboTerm=int(input('Enter fibo term number: '))
+# fiboTerm=int(input('Enter fibo term number: '))
 
 # result=fibonacci(fiboTerm) # 10=34 4=2
-for i in range(1,fiboTerm+1):
-    print(fibonacci(i))
+# for i in range(1,fiboTerm+1):
+#     print(fibonacci(i))
+
+# get total sum of given number series if given 10 make total of 10 is 1-10=55
+def total_sum(n,result):
+    if n==0:
+        return result
+    result=result+n
+    return total_sum(n-1,result)
+
+inputNum=int(input('Enter accumulate number: '))
+total=total_sum(inputNum,result=0)
+print(total)
+
