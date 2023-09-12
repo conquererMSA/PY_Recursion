@@ -28,14 +28,29 @@ recursionlimit 6 er niche set kora zay na.
 # condition onuzayee seta return hoy tokhon sei recursion ke direct recursion bole.
 
 
-def naturalNum(n):
-    print(n) #11-1
-    if n==1:
-        # naturalNum(n - 1) #11
-        return
-    naturalNum(n - 1)
-    # print(n) #2-11
+# def naturalNum(n):
+#     print(n) #11-1
+#     if n==1:
+#         # naturalNum(n - 1) #11
+#         return
+#     naturalNum(n - 1)
+#     # print(n) #2-11
+#
+#
+# lastNum=int(input('Enter the last number: '))
+# naturalNum(lastNum)
 
-
-lastNum=int(input('Enter the last number: '))
-naturalNum(lastNum)
+# indirect recursion: pasa-pasi duiti function za ekti opertike call korbe and ditio
+# function theke recursion start hobe. indirect recursion e o infinite looping call
+# create hote pare. eta memmory efficient na.
+# def recursive1(n):
+#     if n<0:
+#         return
+#     print(n)
+#     recursive2(n-1)
+# def recursive2(n):
+#     print(n)
+#     recursive1(n-1)
+#
+# recursive1(10) #10-(-1)
+# # recursive2(10) #10-1
